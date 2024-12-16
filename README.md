@@ -8,4 +8,5 @@ Revolutionize the apartment search experience by developing an advanced search p
 
 
 
-Architecture diagram: image
+Architecture diagram: 
+![image](https://github.com/user-attachments/assets/bb60d33c-f454-43c7-bc38-8c1ae7f52809)
