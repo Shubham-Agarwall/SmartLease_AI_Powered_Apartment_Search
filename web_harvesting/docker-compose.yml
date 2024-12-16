@@ -1,0 +1,34 @@
+version: "3.8"
+
+services:
+  airflow:
+    build:
+      context: .
+    container_name: airflow_scraping
+    environment:
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      - AIRFLOW__CORE__FERNET_KEY=removed
+    volumes:
+      - ./web_harvesting:/app/web_harvesting
+      - airflow_logs:/opt/airflow/logs
+      - airflow_data:/opt/airflow/data
+    ports:
+      - "8080:8080"
+    command: ["airflow", "standalone"]
+
+
+
+  scraper:
+    build:
+      context: .
+    container_name: scraper_service
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./web_harvesting:/app/web_harvesting
+    working_dir: /app/web_harvesting
+    command: ["python", "main.py"]
+
+volumes:
+  airflow_logs:
+  airflow_data:

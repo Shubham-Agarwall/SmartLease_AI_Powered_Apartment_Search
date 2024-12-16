@@ -1,0 +1,18 @@
+[
+  {
+    "property_id": "property_106",
+    "score": 0.846803188,
+    "metadata": {
+      "property_title": "5 griggs pl",
+      "property_address": "5 griggs pl, boston, ma 02134",
+      "monthly_rent": "rent: $5,000",
+      "bedrooms": "4 bedrooms",
+      "bathrooms": "2 bathrooms",
+      "square_feet": "1,800 square feet",
+      "availability": "available now",
+      "property_image_folder_s3_path": "s3://housing-properties-data-bucket/property_images/property_106/",
+      "distance": "8.1 mi"
+    },
+    "user_supplied_address": "123 Main St, Boston, MA"
+  }
+]

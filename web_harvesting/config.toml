@@ -1,0 +1,11 @@
+base_url = "https://www.apartments.com/houses/boston-ma/"
+pages = 11
+
+[user_agent]
+browser = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.5672.126 Safari/537.36"
+
+[paths]
+stage1_output = "output/properties_stage_1.csv"
+stage2_output = "output/properties_stage_2.csv"
+final_output = "output/properties_final.csv"
+image_folder = "output/property_images"
